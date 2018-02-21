@@ -3,7 +3,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "node-sass": "^4.5.3",
-    "sanitize.css": "^5.0.0"
+    "sanitize.css": "^5.0.0",
+    "uniq": "^1.0.1"
   },
   "scripts": {
     "build": "npm run style:build & npm run script:build",
