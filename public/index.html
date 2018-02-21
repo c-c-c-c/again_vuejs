@@ -9,10 +9,12 @@
 </head>
 <body>
 	<div id="app">
-		
+
 		<term-component
 			v-for="(term, index ) in terms" v-bind:id="term.content" v-bind:index="index" v-bind:key="term.id"></term-component>
 
+
+		<a href="#" @click="addTerm">[条件追加]</a>
 	</div>
 
 	<script type="text/x-template" id="term-component">
