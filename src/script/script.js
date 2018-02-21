@@ -20,7 +20,11 @@
 				this.terms.push(
 					{id:count, content:count}
 				);
-
+			},
+			deleteTerm: function(index) {
+				if(confirm("この条件をほんとうに消しますか")) {
+					this.terms.splice(index,1)
+				}
 			}
 		}
 
