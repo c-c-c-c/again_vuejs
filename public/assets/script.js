@@ -1,11 +1,5 @@
 'use strict';
 
-var _test = require('./components/test.vue');
-
-var _test2 = _interopRequireDefault(_test);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
 (function () {
 
 	// Vue.component('my-component', {
@@ -15,15 +9,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 	// var Child = {
 	// 	template: '<div>カスタムコンポーネント</div>'
 	// }
+	// Vue.component("hello-compo", {
+	// 		template:"#test_component_id",
+	// });
 
+	var testComponent = Vue.extend({
+		template: '<button>Ozaki Love</button>'
+	});
 
 	var vm = new Vue({
 		el: '#app',
 		data: {
-			name: '外部ファイル取得！'
+			name: 'JS内にコンポーネント定義'
 		},
-		components: { TestComponent: _test2.default },
-		template: '<test-component>'
+		components: { 'test-component': testComponent }
+		// template:'<test-component>'
 
 	});
 })();

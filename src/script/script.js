@@ -1,4 +1,3 @@
-import TestComponent from './components/test.vue';
 
 (function() {
 
@@ -9,16 +8,21 @@ import TestComponent from './components/test.vue';
 	// var Child = {
 	// 	template: '<div>カスタムコンポーネント</div>'
 	// }
+	// Vue.component("hello-compo", {
+	// 		template:"#test_component_id",
+	// });
 
-
+	var testComponent = Vue.extend({
+		template:'<button>Ozaki Love</button>'
+	});
 
 	var vm = new Vue({
 		el: '#app',
 		data: {
-			name:'外部ファイル取得！'
+			name:'JS内にコンポーネント定義'
 		},
-		components: { TestComponent },
-		template:'<test-component>'
+		components: { 'test-component': testComponent },
+		// template:'<test-component>'
 
 	});
 })();
