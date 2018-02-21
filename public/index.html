@@ -11,14 +11,20 @@
 	<div id="app">
 		<p> Hello {{name}}!</p>
 		<p><input type="text" v-model="name"></p>
-
 		<test-component></test-component><br>
+		<test-component2></test-component2><br>
 		<test-component></test-component><br>
-		<test-component></test-component><br>
-		<test-component></test-component><br>		
-
+		<test-component2></test-component2><br>
 	</div>
 
+
+	<script type="text/x-template" id="test-component">
+		<button>Ozaki Love</button>
+	</script>
+
+	<script type="text/x-template" id="test-component2">
+		<button>Ozaki Fxxk</button>
+	</script>
 
 
 	<script src="./assets/vue.js"></script>
