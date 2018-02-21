@@ -9,27 +9,9 @@
 </head>
 <body>
 	<div id="app">
-		<!-- <p> Hello {{name}}!</p>
-		<p><input type="text" v-model="name"></p> -->
-		<!-- <test-component></test-component><br>
-		<test-component2></test-component2><br>
-		<test-component></test-component><br>
-		<test-component2></test-component2><br> -->
-
-		<!-- <term-component id="term1"></term-component>
-		<term-component id="term2"></term-component>
-		<term-component id="term3"></term-component>
-		<term-component id="term4"></term-component>
-		<term-component id="term5"></term-component>
-		<term-component id="term6"></term-component> -->
-
-		<!-- <term-component v-for="(term, index )in terms" v-bind:term="term.content" v-bind:index="index" v-bind:key="term.id"></term-component> -->
+		
 		<term-component
 			v-for="(term, index ) in terms" v-bind:id="term.content" v-bind:index="index" v-bind:key="term.id"></term-component>
-
-		<!-- <li v-for="term in terms">
-			{{ term }}
-		</li> -->
 
 	</div>
 
