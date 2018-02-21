@@ -511,3 +511,149 @@ textarea,
  */
 [aria-disabled] {
   cursor: default; }
+
+body {
+  font-family: 'Noto Sans Japanese',sans-serif;
+  font-weight: 200;
+  line-height: 1.9;
+  /* color: #444; */
+
+  font-size: 20px;
+  letter-spacing: 1px;
+	background-image: url("../img/bg_repeat_tiny.png");
+	background-repeat: repeat;
+	/* background-attachment: fixed; */
+	background-position: bottom;
+
+
+ }
+
+
+#wrapper, #footer_wrapper {
+  width: 1000px;
+  margin: auto; }
+
+/* #wrapper {
+		height:1000px;
+} */
+
+header {
+  height: auto; }
+
+.header_logo, nav  {
+  display: inline-block;
+  position: relative;
+	margin-top: 20px;}
+  /* margin: 20px 30px 10px 0; } */
+
+nav {
+	margin-right:40px;
+}
+nav img {
+	margin-left: 10px;
+	margin-top: 40px;
+}
+
+
+.header_logo {
+  margin-left: 40px;
+	margin-right: 20px;
+  height: auto; }
+
+/* webGL */
+#stage {
+	margin : 20px 20px 4px 0px;
+
+}
+
+/* セレクトボックス */
+
+#main_wrapper {
+		background-color: #EEEEEE	;}
+
+.spinyart_talk {
+	width : 500px;
+	height: auto;
+	background-color: #EEE ;
+	padding-left: 10px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border-radius: 15px 15px 15px 15px;
+
+}
+
+.box_selection select {
+	 border: 0;
+	 color: #EEE;
+	 background: transparent;
+	 font-size: 18px;
+	 font-weight: 400;
+	 padding: 0px 4px;
+	 width: 138px;
+	 background: #58B14C;
+	 -webkit-appearance: none;}
+
+.box_selection {
+	 overflow:hidden;
+	 width:130px;
+	 -moz-border-radius: 15px 15px 15px 15px;
+	 -webkit-border-radius: 15px 15px 15px 15px;
+	 border-radius: 15px 15px 15px 15px;
+	 background: #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 100px center;}
+
+.form_container {
+	display:flex;
+	margin-top: 4px;
+ }
+
+ #stage_explain_wrapper {
+	 display: flex;
+ }
+
+#exe_btn {
+	margin:10px;
+	background-color: red;
+	width:300px;
+}
+#exe_btn a {
+	color: white;
+}
+/* フッター */
+footer {
+  margin-top: 50px;
+  width: auto;
+  height: 400px;
+  background-color: #F2F2F2;
+  border: solid 1px #ccc;
+  font-weight: 400;
+  line-height: 2.2; }
+
+#footer_wrapper {
+  text-align: center;
+  padding: 40px 0; }
+
+.footer_main_message {
+  font-size: 26px; }
+
+.footer_attention_message {
+  font-size: 8px;
+  margin-bottom: 40px; }
+
+.footer_hr {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-top: dotted 1px #cdcdcd; }
+
+#footer_hr_area {
+  margin: 20px 0 20px 0; }
+
+.footer_logo {
+  margin-top: 20px; }
+
+.copyright {
+  margin-top: 20px;
+  display: block;
+  font-size: 9px; }
